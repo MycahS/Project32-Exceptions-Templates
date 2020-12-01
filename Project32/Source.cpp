@@ -12,52 +12,19 @@ using namespace std;
 
 //Function Prototypes
 char character(char start, int offset);
-template<class T>
-T half(T num)
-{
-	
-	T result = num / 2;
-	
-		return result;
-	
-}
-
-int half(int num)
-{
-	double result = num / 2.0;
-	
-	if (result + 0.5 > result)
-	{
-		return ceil(result);
-	}
-	else
-		if (result + 0.5 < result)
-		{
-			return floor(result);
-		}
-	
-}
 
 int main()
 {
 
-	double a = 7.0;
-	float b = 5.0f;
-	int c = 17;
-
-	cout << half(a) << endl;
-	cout << half(b) << endl;
-	cout << half(c) << endl;
-
 	
-	/*char test = character('A', 32);
-	cout << "Here are the results: " << test << endl;*/
+	char test = character('A', 32);
+	cout << "Here are the results: " << test << endl;
 	system("pause");
 	return 0;
 }
 
 
-/*//Function to calculate offset, with exceptions
+//Function to calculate offset, with exceptions
 char character(char start, int offset)
 {
 	string exception = ""; //To hold exception message.
@@ -84,4 +51,3 @@ char character(char start, int offset)
 		return start + offset;
 	}
 }
-*/
